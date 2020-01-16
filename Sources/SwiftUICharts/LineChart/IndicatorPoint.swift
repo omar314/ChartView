@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct IndicatorPoint: View {
+public struct IndicatorPoint: View {
     var body: some View {
         ZStack{
             Circle()

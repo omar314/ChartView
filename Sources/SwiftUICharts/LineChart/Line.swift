@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct Line: View {
+public struct Line: View {
     @ObservedObject var data: ChartData
     @Binding var frame: CGRect
     @Binding var touchLocation: CGPoint
