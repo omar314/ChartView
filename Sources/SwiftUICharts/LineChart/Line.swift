@@ -15,6 +15,9 @@ public struct Line: View {
     @Binding var showIndicator: Bool
     @State private var showFull: Bool = false
     @State var showBackground: Bool = true
+  
+    public init() {}
+  
     let padding:CGFloat = 30
     var stepWidth: CGFloat {
         if data.points.count < 2 {
