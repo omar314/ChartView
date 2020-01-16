@@ -42,7 +42,7 @@ public struct Line: View {
         return Path.quadClosedCurvedPathWithPoints(points: points, step: CGPoint(x: stepWidth, y: stepHeight))
     }
     
-    var body: some View {
+    public var body: some View {
         ZStack {
             if(self.showFull && self.showBackground){
                 self.closedPath
