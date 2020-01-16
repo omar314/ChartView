@@ -16,7 +16,12 @@ public struct Line: View {
     @State private var showFull: Bool = false
     @State var showBackground: Bool = true
   
-    public init() {}
+    public init(data: ChartData, frame: CGRect, touchLocation: CGPoint, showIndicator: Bool) {
+      self.data = data
+      self.frame = frame
+      self.touchLocation = touchLocation
+      self.showIndicator = showIndicator
+    }
   
     let padding:CGFloat = 30
     var stepWidth: CGFloat {
